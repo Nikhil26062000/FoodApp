@@ -105,7 +105,7 @@ const Head = () => {
     }
     ],
     // errorElement:<Error />
-    errorElement:<Body />,
+    errorElement:<Restro />,
   },
  
 ]);
