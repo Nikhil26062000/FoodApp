@@ -4,12 +4,14 @@ import Header from "./Header";
 import { Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "../utils/appStore";
+import Body from "./Body";
 
 const Restro = () => {
   return (
     <Provider store={appStore}>
       <div>
-        {/* <Header /> */}
+        <Header />
+     
         <Outlet />
       </div>
     </Provider>
