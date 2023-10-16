@@ -138,7 +138,7 @@ const Body = () => {
  
   return (
     <div>
-    <Header />
+    
     <div className="bodyCont">
       <div className="container">
         <input type="text" placeholder="Search Your Food" onChange={searchItem}/>

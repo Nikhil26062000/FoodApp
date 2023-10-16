@@ -11,8 +11,7 @@ const Restro = () => {
     <Provider store={appStore}>
       <div>
         <Header />
-     
-        <Outlet />
+       <Outlet/>
       </div>
     </Provider>
   );
