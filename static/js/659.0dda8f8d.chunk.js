@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkrestaurant_app=self.webpackChunkrestaurant_app||[]).push([[659],{7659:function(a,e,t){t.r(e);t(2791);var u=t(184);e.default=function(){return(0,u.jsx)("div",{children:"This is about page"})}}}]);
+//# sourceMappingURL=659.0dda8f8d.chunk.js.map

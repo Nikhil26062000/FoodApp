@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkrestaurant_app=self.webpackChunkrestaurant_app||[]).push([[827],{1827:function(e,r,a){a.r(r);a(2791);var n=a(184);r.default=function(){return(0,n.jsx)(n.Fragment,{children:(0,n.jsx)("h1",{children:"This is Grocery Page..."})})}}}]);
+//# sourceMappingURL=827.233cc940.chunk.js.map
