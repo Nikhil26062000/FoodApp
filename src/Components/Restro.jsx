@@ -9,7 +9,7 @@ const Restro = () => {
   return (
     <Provider store={appStore}>
       <div>
-        <Header />
+        {/* <Header /> */}
         <Outlet />
       </div>
     </Provider>

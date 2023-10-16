@@ -9,6 +9,7 @@ import DishTypes from './DishTypes';
 import RoomIcon from '@mui/icons-material/Room';
 import Shimmer from './Shimmer';
 import Footer from "./Footer";
+import Header from "./Header";
 
 
 
@@ -137,6 +138,7 @@ const Body = () => {
  
   return (
     <div>
+    <Header />
     <div className="bodyCont">
       <div className="container">
         <input type="text" placeholder="Search Your Food" onChange={searchItem}/>
