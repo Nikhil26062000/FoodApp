@@ -104,7 +104,7 @@ const Head = () => {
       element:<OrderPlaced/>
     }
     ],
-    // errorElement:<Error />,
+    errorElement:<Body />,
   },
  
 ]);
