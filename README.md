@@ -1,3 +1,5 @@
+# Please install CORS extension so that API call happens smoothly
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
