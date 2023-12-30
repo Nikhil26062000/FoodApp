@@ -50,7 +50,7 @@ const Search = () => {
   })
   setTempList2(filterItem);
 
-  console.log(templist2);
+ // console.log(templist2);
   
 
   

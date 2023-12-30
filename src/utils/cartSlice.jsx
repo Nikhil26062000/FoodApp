@@ -45,7 +45,7 @@ const cartSlice = createSlice({
                 if(tempItem){
                    tempItem.quantity+=1;
                 //   tempItem.price? state.sum+=tempItem.price : state.sum+=tempItem.defaultPrice
-                    console.log(tempItem.quantity);
+                  //  console.log(tempItem.quantity);
                 }
         
                 
@@ -60,7 +60,7 @@ const cartSlice = createSlice({
                 if(tempItem && tempItem.quantity>1){
                    tempItem.quantity-=1;
                 //    tempItem.price? state.sum-=tempItem.price : state.sum-=tempItem.defaultPrice
-                    console.log(tempItem.quantity);
+                   // console.log(tempItem.quantity);
                 }
         },
         deductPrice:(state,action)=>{
