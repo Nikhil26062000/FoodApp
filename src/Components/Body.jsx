@@ -153,12 +153,12 @@ const Body = () => {
       <h2 className="BannerTop">Best Offers for You 💯</h2>
       <Banner data={banner} /> */}
 
-      <h2 className="BannerTop">What's on your mind ❓</h2>
+      <h2 className="BannerTop max-sm:text-center">What's on your mind ❓</h2>
       <DishTypes data={banner2} />
 
-      <h2 className="BannerTop">Top restaurant chains Near You <RoomIcon className="marklogo"/></h2>
+      <h2 className="BannerTop max-sm:text-center">Top restaurant chains Near You <RoomIcon className="marklogo"/></h2>
 
-      <div className="category-buttons">
+      <div className="category-buttons max-sm:flex justify-center gap-2 flex-wrap">
         <Button className="btncat" variant="outlined" onClick={showAllItems}>ALL</Button>
         <Button className="btncat" variant="outlined" type="submit"  onClick={filterOut}>
           Rating 4+ ⭐
@@ -169,7 +169,7 @@ const Body = () => {
         <Button className="btncat" variant="outlined" onClick={lessThanSix}>💰 Less than 600</Button>
       </div>
   
-      <div className="cardContaineer">
+      <div className="cardContaineer max-sm:flex justify-center flex-wrap">
         {templist && templist.map((ele) => {
           return <Link to={"/restaurant/"+ele.info.id} key={ele.info.id}>
           <Card resData={ele} />
