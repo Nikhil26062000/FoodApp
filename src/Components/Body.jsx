@@ -48,7 +48,7 @@ const Body = () => {
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants 
     );
     // console.log(list);
-    setTempList( json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setTempList( json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     console.log(templist);
     setBanner(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
     setBanner2(json?.data?.cards[0]?.card?.card?.imageGridCards?.info);
