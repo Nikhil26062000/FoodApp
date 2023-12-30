@@ -28,10 +28,10 @@ const Search = () => {
     const json = await data.json();
    
     setList2(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants 
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants 
     );
 
-    setBannerNew2(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.info);
+    setBannerNew2(json?.data?.cards[0]?.card?.card?.imageGridCards?.info);
 
   };
  

@@ -23,7 +23,7 @@ const Offer = () => {
     // );
     // console.log(list);
     setTempList3(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     console.log(templist3);
 
