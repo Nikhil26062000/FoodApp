@@ -8,14 +8,15 @@ import "slick-carousel/slick/slick-theme.css";
 export default function DishTypes({data}) {
     console.log(data); 
   var settings = {
-    infinite: false,
+    infinite: true,
+    autoplay: true,
     speed: 500,
     arrows: false,
     slidesToShow: 10,
-    slidesToScroll: 1
+    slidesToScroll: 5
   };
   return (
-    <div className="">
+    <div className="hidden sm:block">
     <Slider {...settings}>
     {data && data.map((ele)=> {
        return(
