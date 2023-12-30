@@ -40,7 +40,7 @@ const Body = () => {
 
 
     const json = await data.json();
-    // console.log(json);
+    console.log(json);
     // console.log(
     //   json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants 
     // );
@@ -51,8 +51,8 @@ const Body = () => {
     setTempList( json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     console.log(templist);
     setBanner(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
-    setBanner2(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.info);
-    // console.log(banner2); 
+    setBanner2(json?.data?.cards[0]?.card?.card?.imageGridCards?.info);
+    console.log(banner2); 
   };
  
   const filterOut = () => {
@@ -148,10 +148,10 @@ const Body = () => {
 
         
       </div>
-
+{/* 
       
       <h2 className="BannerTop">Best Offers for You 💯</h2>
-      <Banner data={banner} />
+      <Banner data={banner} /> */}
 
       <h2 className="BannerTop">What's on your mind ❓</h2>
       <DishTypes data={banner2} />

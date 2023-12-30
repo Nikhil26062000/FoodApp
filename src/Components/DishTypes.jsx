@@ -5,8 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-export default function Banner({data}) {
-    // console.log(data);
+export default function DishTypes({data}) {
+    console.log(data); 
   var settings = {
     infinite: false,
     speed: 500,
@@ -15,7 +15,7 @@ export default function Banner({data}) {
     slidesToScroll: 1
   };
   return (
-    <div>
+    <div className="">
     <Slider {...settings}>
     {data && data.map((ele)=> {
        return(

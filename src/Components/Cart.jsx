@@ -11,10 +11,10 @@ import EmptyCart from "./EmptyCart";
 
 const Cart = () => {
   const item = useSelector((store) => store.cart.items);
-  console.log(item);
+ // console.log(item);
   const totalPrice = useSelector((store) => store.cart.sum);
   // const {quantity} = item?.card;
-  console.log(item);
+ // console.log(item);
 
   const dispatch = useDispatch();
 
