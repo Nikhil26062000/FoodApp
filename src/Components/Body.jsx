@@ -153,7 +153,7 @@ const Body = () => {
       <h2 className="BannerTop">Best Offers for You 💯</h2>
       <Banner data={banner} /> */}
 
-      {/* <h2 className="BannerTop max-sm:text-center">What's on your mind ❓</h2> */}
+      <h2 className="BannerTop max-sm:text-center">What's on your mind ❓</h2>
       <DishTypes data={banner2} />
 
       <h2 className="BannerTop max-sm:text-center">Top restaurant chains Near You <RoomIcon className="marklogo"/></h2>
