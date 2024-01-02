@@ -11,11 +11,12 @@ import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Button from "@mui/material/Button";
 import HomeIcon from "@mui/icons-material/Home";
-import MenuIcon from '@mui/icons-material/Menu';
-
+import MenuIcon from "@mui/icons-material/Menu";
+import Dropdown from "./Dropdown";
 const Header = () => {
   const [login, setLogin] = useState("Login");
   const onlineStatus = useOnlineStatus();
+  const [show,setShow] = useState(false);
 
   const changeCred = () => {
     //  if(login==="Login"){
@@ -26,6 +27,8 @@ const Header = () => {
     login === "Login" ? setLogin("Logout") : setLogin("Login");
   };
 
+
+
   /**
    * ! SUBSCRIBING TO THE STORE BY USING useSelector hook...
    * !we are subscribing because we want to read data from cartSlice and want to show that data in header i.e we want to show the length of items   which is  present in cartSlice at icon section of header...
@@ -33,16 +36,29 @@ const Header = () => {
   const cartItems = useSelector((store) => store.cart.items);
   // console.log(cartItems);
 
+
+  const handleMenu = () =>{
+    console.log(show);
+    setShow(!show);
+    console.log(show);
+  }
+
   return (
     <>
-      <div className="flex justify-between p-4 shadow-xl max-md:justify-between  ">
+    <div>
+      <div className="flex justify-between p-4 shadow-xl max-md:justify-between max-md:sticky max-md:top-0 max-md:z-[90]  ">
         <div className="headerLogo">
           <img className="w-16" src={Logo2} />
         </div>
 
-        <div className=" hidden max-md:flex justify-center items-center mr-10">
-        <MenuIcon/>
+        <div className="hidden max-md:flex flex-col justify-start items-end rounded-lg p-6 mr-10 ">
+          <MenuIcon onClick={handleMenu} />
+         
         </div>
+
+      
+
+
 
         {/* //links */}
         <div className="headerRight max-md:hidden max-lg:gap-16">
@@ -61,13 +77,18 @@ const Header = () => {
 
           <Link className="links" to="/cart">
             <ShoppingCartIcon />
-            {cartItems.length} items{" "}
+            {cartItems.length} 
           </Link>
 
           <Button className="btnnew" variant="contained" onClick={changeCred}>
             {login}
           </Button>
         </div>
+      </div>
+
+      {show && <Dropdown show={show}/>}
+
+      
       </div>
     </>
   );
