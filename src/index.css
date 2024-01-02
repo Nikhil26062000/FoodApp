@@ -160,15 +160,6 @@ input {
     font-weight: 900;
   } */
 
-.cardContaineer {
-  /* margin: 13px 100px; */
-  /* display: flex;
-    flex-wrap: wrap; */
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 24% 24% 24% 24%;
-  margin-top: 20px;
-}
 
 .card {
   /* width:250px; */
@@ -305,6 +296,7 @@ h5 {
   padding-left: 2%;
 }
 .price{
+  
   color:green;
 }
 
@@ -357,6 +349,7 @@ h5 {
   /* color: #f1ad02 !important; */
   /* margin: 10px; */
   margin-right: 1% !important;
+  margin-top: 10px !important;
   
 
 }

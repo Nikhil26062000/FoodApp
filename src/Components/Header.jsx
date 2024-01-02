@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 import "../index.css";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useSelector } from "react-redux";
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 // import HelpIcon from '@mui/icons-material/Help';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Button from '@mui/material/Button';
-import HomeIcon from '@mui/icons-material/Home';
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Button from "@mui/material/Button";
+import HomeIcon from "@mui/icons-material/Home";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
   const [login, setLogin] = useState("Login");
@@ -34,40 +35,39 @@ const Header = () => {
 
   return (
     <>
-    
-      <div className="flex justify-between p-4 shadow-xl">
-  
-        <div className="headerLogo">  
+      <div className="flex justify-between p-4 shadow-xl max-md:justify-between  ">
+        <div className="headerLogo">
           <img className="w-16" src={Logo2} />
         </div>
 
-        {/* //links */}
-        <div className="headerRight">
-          
-          <Link className="links" to="/"><HomeIcon />Home</Link>
-          <Link className="links" to="/search"><SearchOutlinedIcon />Search</Link>
-          <Link className="links" to="/offer"> <LocalOfferIcon /> Offers</Link>
-          {/* <Link className="links" to="/contact"> <HelpIcon /> Help</Link> */}
-          {/* <Link to="/grocery">Grocery</Link> */}
-          
-       
-            <Link className="links" to="/cart"><ShoppingCartIcon/>{cartItems.length} items </Link>
-           
-         
-          {/* <h4>Online Status : {onlineStatus ? "✅" : "🔴"}</h4> */}
-          {/* <button  >
-            {login}
-          </button> */}
-          {/* <Button className="bg-yellow-500" onClick={changeCred}>{login}</Button> */}
-          <Button className="btnnew" variant="contained" onClick={changeCred}>{login}</Button>
-         
+        <div className=" hidden max-md:flex justify-center items-center mr-10">
+        <MenuIcon/>
         </div>
 
-        
-       
+        {/* //links */}
+        <div className="headerRight max-md:hidden max-lg:gap-16">
+          <Link className="links" to="/">
+            <HomeIcon />
+            Home
+          </Link>
+          <Link className="links" to="/search">
+            <SearchOutlinedIcon />
+            Search
+          </Link>
+          <Link className="links" to="/offer">
+            {" "}
+            <LocalOfferIcon /> Offers
+          </Link>
 
-      
-        
+          <Link className="links" to="/cart">
+            <ShoppingCartIcon />
+            {cartItems.length} items{" "}
+          </Link>
+
+          <Button className="btnnew" variant="contained" onClick={changeCred}>
+            {login}
+          </Button>
+        </div>
       </div>
     </>
   );

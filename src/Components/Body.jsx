@@ -153,12 +153,12 @@ const Body = () => {
       <h2 className="BannerTop">Best Offers for You 💯</h2>
       <Banner data={banner} /> */}
 
-        <h2 className="BannerTop max-sm:text-center">
+        <h2 className="BannerTop max-md:text-center max-md:mt-12">
           What's on your mind ❓❓
         </h2>
         <DishTypes data={banner2} />
 
-        <h2 className="BannerTop max-sm:text-center">
+        <h2 className="BannerTop max-md:text-center max-md:mt-12 mb-4">
           Top restaurant chains Near You <RoomIcon className="marklogo" />
         </h2>
 
@@ -192,7 +192,7 @@ const Body = () => {
           </Button>
         </div>
 
-        <div className="cardContaineer max-sm:flex justify-center flex-wrap">
+        <div className="max-md:flex max-md:justify-center max-md:flex-wrap md:grid md:grid-cols-3 lg:grid lg:grid-cols-4">
           {templist &&
             templist.map((ele) => {
               return (

@@ -18,19 +18,19 @@ const Card = ({ resData }) => {
         alt=""
       />
 
-      <h4 className="name">
+      <h4 className="name max-md:text-center">
         {name.length < 15 ? name : name.slice(0, 15) + "..."}
       </h4>
-      <h5 className="cuisines">{cuisines.slice(0, 4).join(", ")} </h5>
-      <h6 className={resData.info.veg ? "text-green-600" : "text-red-600"}>
-        {" "}
+      <h5 className="cuisines  max-md:text-center ">{cuisines.slice(0, 4).join(", ")} </h5>
+      <h6 className={`${resData.info.veg ? "text-green-600" : "text-red-600"} max-md:text-center`}>
+       
         {resData.info.veg ? "💚 VEG" : "🔴 Non Veg"}
       </h6>
-      <h4>⭐⭐⭐⭐ {avgRating}</h4>
+      <h4 className=" max-md:text-center">⭐⭐⭐⭐ {avgRating}</h4>
 
-      <div className="priceBox">
+      <div className="priceBox max-md:flex max-md:justify-evenly max-md:flex-wrap">
         <h4 className="price">{costForTwo} </h4>
-        <button className="orderButton">Order Now</button>
+        <button className="orderButton max-md:mx-0">Order Now</button>
       </div>
     </div>
   );
