@@ -11,7 +11,7 @@ const LongListsCards = ({ totalData, accordionFunction, istrue, icon }) => {
 
   return (
     <div className="m-2 text-center">
-      <div className="mx-52 flex justify-evenly border border-b-4 border-t-0 border-l-0 border-r-0 p-2 text-left place-items-center">
+      <div className=" flex justify-evenly border border-b-4 border-t-0 border-l-0 border-r-0 p-2 text-left place-items-center md:mx-auto w-3/5 max-md:w-[95%] max-md:mx-auto">
         <div className="w-96">
           <h3 className="font-medium">{title || name || type}</h3>
         </div>

@@ -37,7 +37,7 @@ const Offer = () => {
   }
   return (
     <div className="offers">
-      <div className="cardContaineer">
+      <div className="cardContaineer max-md:flex max-md:justify-center max-md:flex-wrap md:grid md:grid-cols-3 lg:grid lg:grid-cols-4">
         {templist3 &&
           templist3.map((ele) => {
             return (

@@ -160,15 +160,6 @@ input {
     font-weight: 900;
   } */
 
-.cardContaineer {
-  /* margin: 13px 100px; */
-  /* display: flex;
-    flex-wrap: wrap; */
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 24% 24% 24% 24%;
-  margin-top: 20px;
-}
 
 .card {
   /* width:250px; */
@@ -179,20 +170,28 @@ input {
   position: relative;
   margin: 10px;
   border-radius: 10px;
+  scale: .8;
+  width: 300px;
 
 }
+
+
+
 
 .card:hover {
   border: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   /* background-color: #f8c746;
   color: white; */
+  scale: .9;
   
 }
+
 
 .card img {
   width: 100%;
   height: 250px;
+  object-fit: cover!important;
   border-radius: 10px;
 }
 
@@ -305,6 +304,7 @@ h5 {
   padding-left: 2%;
 }
 .price{
+  
   color:green;
 }
 
@@ -357,6 +357,7 @@ h5 {
   /* color: #f1ad02 !important; */
   /* margin: 10px; */
   margin-right: 1% !important;
+  margin-top: 10px !important;
   
 
 }
@@ -424,6 +425,7 @@ h5 {
 .dlfetchOrderDltbutton{
   margin-top: 20px;
 }
+
 
 .leftSide{
   width:80%;
@@ -512,7 +514,7 @@ border-radius: 10px;
 .rightSide{
   width: 30%;
   /* border: 1px solid #f8c746; */
-  height: 50vh;
+  height: 65vh;
   background-color: #fff;
     border-radius: 10px;
    
@@ -538,6 +540,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     background: black;
     margin-left: 15px;
     margin-right: 15px;
+  
 }
 .rightSide input{
   margin: 15px;
