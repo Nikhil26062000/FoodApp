@@ -192,7 +192,7 @@ const Body = () => {
           </Button>
         </div>
 
-        <div className="max-md:flex max-md:justify-center max-md:flex-wrap md:grid md:grid-cols-3 lg:grid lg:grid-cols-4">
+        <div className=" max-md:flex max-md:justify-center max-md:flex-wrap md:grid md:grid-cols-3 lg:grid lg:grid-cols-4">
           {templist &&
             templist.map((ele) => {
               return (

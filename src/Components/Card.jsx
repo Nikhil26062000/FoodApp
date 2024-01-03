@@ -9,7 +9,7 @@ const Card = ({ resData }) => {
   // cuisines = cuisines.slice(0,3);
 
   return (
-    <div className="card max-md:border border-black">
+    <div className="card shadow-lg  ">
       <img className=""
         src={
           "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,c_fill/" +
