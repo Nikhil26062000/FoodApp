@@ -31,25 +31,27 @@ const DetailedCard = () => {
 
   return (
     <div>
-      <div className="cardCont1">
-        <div className="boxLeft">
-          <h1 className="text-3xl text-black font-black">{name}</h1>
-          <h5>{cuisines}</h5>
-          <h3>{areaName}</h3>
+    <h1 className="text-3xl text-black font-black text-center underline mt-5">{name}</h1>
+      <div className=" md:flex justify-center md:mt-2">
+      
+        <div className="max-md:flex justify-center gap-2 md:w-[20%]">
+          
+          <h5 className="text-center">{cuisines}</h5>
+          <h3 className="text-center">{areaName}</h3>
         </div>
-        <div className="boxRight">
-          <h3>{"⭐" + avgRating}</h3>
-          <h6 className="text-green-700 font-black">500k+</h6>
+        <div className="md:w-[20%] ">
+          <h3 className="text-center">{"⭐" + avgRating}</h3>
+          <h6 className="text-green-700 font-black text-center">500k+</h6>
         </div>
       </div>
 
-      <div className="cardCont2">
-        <div className="info">
-          <h4 className="text-red-700 font-semibold">🕥 25min</h4>
-          <h3 className="text-green-700 font-semibold">💰 {costForTwoMessage}</h3>
+      <div className="">
+        <div className="max-md:flex max-md:justify-center max-md:gap-2 mt-5 md:flex justify-center gap-4">
+          <h4 className="text-red-700 font-semibold text-center">🕥 25min</h4>
+          <h3 className="text-green-700 font-semibold text-center">💰 {costForTwoMessage}</h3>
         </div>
 
-        <div className="offerCards">
+        <div className="max-md:flex justify-around flex-wrap mt-5 offerCards">
           {offerCard &&
             offerCard.map((ele, index) => {
               return (

@@ -30,7 +30,7 @@ export default function DishTypes({data}) {
     autoplay: true,
     speed: 500,
     arrows: false,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 5
   };
   return (
@@ -41,7 +41,7 @@ export default function DishTypes({data}) {
     {data && data.map((ele)=> {
        return(
         <div key={ele.id} className="pt-6 px-2 outline-none rounded-full">
-            <img className="w-28" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,c_fill/" + ele.imageId} />
+            <img className="w-44" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,c_fill/" + ele.imageId} />
         </div>
        ) 
     })}
@@ -54,7 +54,7 @@ export default function DishTypes({data}) {
     {data && data.map((ele)=> {
        return(
         <div key={ele.id} className="pt-6 px-2 outline-none rounded-full">
-            <img className="w-28" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,c_fill/" + ele.imageId} />
+            <img className="w-44" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,c_fill/" + ele.imageId} />
         </div>
        ) 
     })}
@@ -66,7 +66,7 @@ export default function DishTypes({data}) {
     {data && data.map((ele)=> {
        return(
         <div key={ele.id} className="pt-6 px-2 outline-none rounded-full">
-            <img className="w-36" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,c_fill/" + ele.imageId} />
+            <img className="w-44" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,c_fill/" + ele.imageId} />
         </div>
        ) 
     })}

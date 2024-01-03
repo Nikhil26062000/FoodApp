@@ -45,8 +45,8 @@ const Header = () => {
 
   return (
     <>
-    <div>
-      <div className="flex justify-between p-4 shadow-xl max-md:justify-between max-md:sticky max-md:top-0 max-md:z-[90]  ">
+    <div className="max-md:sticky max-md:top-0 max-md:z-[90] bg-white">
+      <div className="flex justify-between p-4 shadow-xl max-md:justify-between">
         <div className="headerLogo">
           <img className="w-16" src={Logo2} />
         </div>

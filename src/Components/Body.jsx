@@ -133,7 +133,7 @@ const Body = () => {
   return (
     <div>
       <div className="bodyCont">
-        <div className="container">
+        <div className="container max-sm:flex justify-between">
           <input
             type="text"
             placeholder="Search Your Food"
@@ -162,7 +162,7 @@ const Body = () => {
           Top restaurant chains Near You <RoomIcon className="marklogo" />
         </h2>
 
-        <div className="category-buttons max-sm:flex justify-center gap-2 flex-wrap">
+        <div className="category-buttons max-md:flex justify-center gap-2 flex-wrap">
           <Button className="btncat" variant="outlined" onClick={showAllItems}>
             ALL
           </Button>
