@@ -51,7 +51,7 @@ const Header = () => {
           <img className="w-16" src={Logo2} />
         </div>
 
-        <div className="hidden max-md:flex flex-col justify-start items-end rounded-lg p-6 mr-10 ">
+        <div className="hidden max-md:flex flex-col justify-start items-end rounded-lg p-6 ">
           <MenuIcon onClick={handleMenu} />
          
         </div>
